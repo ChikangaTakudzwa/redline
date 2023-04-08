@@ -2,54 +2,54 @@
     <div class="flex items-center text-center">
         <h3 class="mx-auto py-5 text-xl font-bold dark:text-white">New
             <mark class="p-2 text-white bg-red-800 rounded dark:bg-blue-500">Arrivals</mark>
-        </h3>
+        </h3> 
     </div>
 </div>
 <div class="container mx-auto my-4">
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
         <ul class="uk-slider-items uk-grid">
-            <li class="uk-width-3-4">
+            <li class="uk-width-1-2">
                 <div class="uk-panel">
                     <img src="https://ivesexid.sirv.com/redline/home/header1.jpg" width="1800" height="1200" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
+                    <div class="hidden md:block uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">1</h3>
                         <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </li>
-            <li class="uk-width-3-4">
+            <li class="uk-width-1-2">
                 <div class="uk-panel">
                     <img src="https://ivesexid.sirv.com/redline/home/header1.jpg" width="1800" height="1200" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
+                    <div class="hidden md:block uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">2</h3>
                         <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </li>
-            <li class="uk-width-3-4">
+            <li class="uk-width-1-2">
                 <div class="uk-panel">
                     <img src="https://ivesexid.sirv.com/redline/home/header1.jpg" width="1800" height="1200" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
+                    <div class="hidden md:block uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">3</h3>
                         <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </li>
-            <li class="uk-width-3-4">
+            <li class="uk-width-1-2">
                 <div class="uk-panel">
                     <img src="https://ivesexid.sirv.com/redline/home/header1.jpg" width="1800" height="1200" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
+                    <div class="hidden md:block uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">4</h3>
                         <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </li>
-            <li class="uk-width-3-4">
+            <li class="uk-width-1-2">
                 <div class="uk-panel">
                     <img src="https://ivesexid.sirv.com/redline/home/header1.jpg" width="1800" height="1200" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
+                    <div class="hidden md:block uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">5</h3>
                         <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -61,3 +61,32 @@
     
     </div>
 </div>
+
+<script>
+
+    const mobileViewportWidth = 768; // Change this value depending on your definition of "mobile"
+
+    function hideElementOnMobileViewport(selector) {
+      const element = document.querySelector(selector);
+
+      function checkViewportWidth() {
+        if (window.innerWidth < mobileViewportWidth) {
+          element.style.display = "none";
+        } else {
+          element.style.display = "";
+        }
+      }
+
+      // Check viewport width on page load
+      checkViewportWidth();
+
+      // Check viewport width on resize
+      window.addEventListener("resize", checkViewportWidth);
+    }
+
+    // Usage:
+    hideElementOnMobileViewport("#overlay");
+
+
+
+</script>
