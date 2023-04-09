@@ -7,3 +7,11 @@ def home(requests):
 
 def shop(requests):
     return render (requests, "shop/index.html")
+
+
+def cart(requests):
+    return render (requests, "cart/cart_page.html")
+
+
+def single_product(requests):
+    return render (requests, "products/single_product.html")
