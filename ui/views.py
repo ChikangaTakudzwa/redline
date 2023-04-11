@@ -13,3 +13,6 @@ def single_product(requests):
 def cart(requests):
     return render (requests, "cart/cart_page.html")
 
+def checkout(requests):
+    return render (requests, "cart/checkout.html")
+
