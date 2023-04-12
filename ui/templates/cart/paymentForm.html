@@ -1,0 +1,23 @@
+<form id="payform" class="hidden" action="#" onsubmit="event.preventDefault();">
+    <h3 class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Payment details</h3>
+    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+        <div>
+            <label for="method" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Method</label>
+            <input type="text" id="method" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required="">
+        </div>
+        <div>
+            <label for="num" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number</label>
+            <input type="number" id="num" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required="">
+        </div>
+        <div>
+            <label for="street" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Street</label>
+            <input type="text" id="street" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required="">
+        </div>                        <div>
+            <label for="pobox" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PO Box</label>
+            <input type="text" id="pobox"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required="">
+        </div>
+    </div>
+    <button onclick="moveToStep3()" type="submit" class="text-white bg-red-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Next Step: Finish
+    </button>
+</form>
